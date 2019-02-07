@@ -3,32 +3,89 @@
 
 <head>
     <title>my cool site</title>
-    <style type="text/css">
-		.about-me {
-			float: left;
-		}
-		.links {
-			float: right;
-		}
-		.wrapper {
-			clear: both;
-		}
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+    div {
+        margin: auto;
+        border: solid black 1px;
+    }
+
+    .about-me {
+        float: left;
+    }
+
+    .links {
+        float: right;
+    }
+
+    .container {
+        clear: both;
+    }
+
+    .profile-image {
+        float: left;
+    }
+
+    .content {
+        height: 550px;
+        text-align: center;
+    }
+
+    a {
+        background-color: blue;
+        border-color: black;
+        width: 100px;
+        color: white;
+        font-family: arial sans-serif;
+        font-weight: 200px;
+        font-size: 30px;
+        padding: 20px 50px;
+        border-radius: 25px;
+        margin: 50px;
+        text-decoration: none;
+    }
+
+    h2 {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    p {
+        color: black;
+        font-size: 24px;
+        margin: 50px;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
     </style>
 </head>
 
 <body>
-	<div>
-	    <div class="about-me">Header here</div>
-	    <div class="links">link link link link</div>
+    <div>
+        <div class="about-me">Header here</div>
+        <div class="links">link link link link</div>
     </div>
-    <div class="wrapper" width="100%">
-        <div id="profile-image"><img src="image-amy.jpg" style="width: 300px;"/></div>
-            <div id="content">
-                <div id="button">REAd my blog</div>
-                <div>several paragraphs here</div>
+    <div class="container">
+        <div class="profile-image"><img src="image-amy.jpg" style="width: 310px;"/></div>
+            <div class="content">
+                <h1>Amy Gregory</h1>
+                <h2>Spanish Teacher, Health Coach, and Coding Ninja</h3>
+            	<a href="www.google.com">READ MY BLOG</a>
+            	<p>Hola! Vamos a la playa!</p>
+            	<p>Food is medicine.</p>
+            	<p>Coding Ninja will be available to hire in the near future. LOL!</p>
+
             </div>
     </div>
-    <div id="social"></div>
+    <div class="footer"></div>
 </body>
 
 </html>
